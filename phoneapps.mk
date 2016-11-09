@@ -27,11 +27,10 @@ private-phone-priv-apps := \
 	CMAudioService \
 	CMSettingsProvider \
 	ExternalStorageProvider \
+	FMRadio \
 	FusedLocation \
 	InputDevices \
 	ProxyHandler \
 	SharedStorageBackup \
 	StatementService \
-	Shell \
-	ThemeManagerService \
-	ThemesProvider
+	Shell 

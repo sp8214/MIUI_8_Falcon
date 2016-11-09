@@ -687,6 +687,10 @@ system/etc/permissions/com.google.android.dialer.support.xml 0 0 644 selabel=u:o
 system/etc/permissions/com.google.android.maps.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/permissions/com.google.android.media.effects.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/permissions/com.google.widevine.software.drm.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/permissions/com.motorola.camera.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/permissions/com.motorola.cameraone.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/permissions/com.motorola.gallery.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/permissions/com.motorola.motosignature.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/permissions/com.qualcomm.location.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/permissions/handheld_core_hardware.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/permissions/org.cyanogenmod.appsuggest.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
