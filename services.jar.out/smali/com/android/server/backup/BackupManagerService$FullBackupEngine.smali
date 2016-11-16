@@ -803,8 +803,6 @@
 
     iget-object v5, v0, Lcom/android/server/backup/BackupManagerService$FullBackupEngine;->mOutput:Ljava/io/OutputStream;
 
-    move-object/from16 v0, p0
-
     iget-object v8, v0, Lcom/android/server/backup/BackupManagerService$FullBackupEngine;->mOutputFile:Landroid/os/ParcelFileDescriptor;
 
     invoke-virtual {v8}, Landroid/os/ParcelFileDescriptor;->getFd()I

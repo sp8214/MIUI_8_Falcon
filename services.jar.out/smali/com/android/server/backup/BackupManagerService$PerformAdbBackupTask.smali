@@ -1068,7 +1068,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_9
+    if-nez v3, :cond_7
 
     move-object/from16 v0, p0
 
@@ -1088,6 +1088,20 @@
 
     .line 3888
     .local v18, "finalOutput":Ljava/io/OutputStream;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/server/backup/BackupManagerService$PerformAdbBackupTask;->mOutputFile:Landroid/os/ParcelFileDescriptor;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/server/backup/BackupManagerService$PerformAdbBackupTask;->mOutputFile:Landroid/os/ParcelFileDescriptor;
+
+    invoke-virtual {v4}, Landroid/os/ParcelFileDescriptor;->getFd()I
+
+    move-result v4
+
+    invoke-static {v3, v4}, Lcom/android/server/backup/BackupManagerServiceInjector;->writeMiuiBackupHeader(Landroid/os/ParcelFileDescriptor;I)V
+
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/backup/BackupManagerService$PerformAdbBackupTask;->this$0:Lcom/android/server/backup/BackupManagerService;
@@ -1234,20 +1248,6 @@
 
     .line 3992
     :goto_4
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/android/server/backup/BackupManagerService$PerformAdbBackupTask;->mOutputFile:Landroid/os/ParcelFileDescriptor;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/server/backup/BackupManagerService$PerformAdbBackupTask;->mOutputFile:Landroid/os/ParcelFileDescriptor;
-
-    invoke-virtual {v4}, Landroid/os/ParcelFileDescriptor;->getFd()I
-
-    move-result v4
-
-    invoke-static {v3, v4}, Lcom/android/server/backup/BackupManagerServiceInjector;->writeMiuiBackupHeader(Landroid/os/ParcelFileDescriptor;I)V
-
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/backup/BackupManagerService$PerformAdbBackupTask;->this$0:Lcom/android/server/backup/BackupManagerService;
@@ -1601,7 +1601,6 @@
 
     invoke-static {v3, v4}, Lcom/android/server/backup/BackupManagerServiceInjector;->setOutputFileDescriptor(Lcom/android/server/backup/BackupManagerService$FullBackupEngine;Landroid/os/ParcelFileDescriptor;)V
 
-    .line 3966
     if-eqz v23, :cond_10
 
     const-string/jumbo v3, "Shared storage"
